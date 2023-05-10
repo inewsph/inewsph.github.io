@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contoh While - QnA</title>
+    <meta name="description" content="Contoh While, Contoh Perulangan While, , , , KunKun Tv, 2021-07-10T15:16:11.000000Z, 20, PERNYATAAN WHILE, DO... WHILE DAN FOR PADA BAHASA C++ ~ Materi pembelajaran, yudaciptosaputra.blogspot.com, 1366 x 768, jpeg, , 20, contoh-while, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contoh While - QnA" />
+    <meta property="og:description" content="Contoh While, Contoh Perulangan While, , , , KunKun Tv, 2021-07-10T15:16:11.000000Z, 20, PERNYATAAN WHILE, DO... WHILE DAN FOR PADA BAHASA C++ ~ Materi pembelajaran, yudaciptosaputra.blogspot.com, 1366 x 768, jpeg, , 20, contoh-while, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contoh While - QnA" />
+    <meta name="twitter:description" content="Contoh While, Contoh Perulangan While, , , , KunKun Tv, 2021-07-10T15:16:11.000000Z, 20, PERNYATAAN WHILE, DO... WHILE DAN FOR PADA BAHASA C++ ~ Materi pembelajaran, yudaciptosaputra.blogspot.com, 1366 x 768, jpeg, , 20, contoh-while, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://inewsph.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://inewsph.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://inewsph.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://inewsph.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://inewsph.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://inewsph.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://inewsph.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://inewsph.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Contoh While</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">TimthGunth5098</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Contoh+While" alt="Contoh While">
+                    </div>
+                    <p></p>
+                    <p>10 contoh when dan 10 contoh while</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#10-contoh-when-dan-10-contoh-while">1.
+                                            10 contoh when dan 10 contoh while</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#3-contoh-when-dan-while">2.
+                                            3 contoh when dan while</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-contoh-kalimat-while">3.
+                                            sebutkan contoh kalimat while</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-contoh-10-past-countinouse-tensemenggunakan-whenwhile-rumus-stobewaswereingmenggunakan-whenwhile">4.
+                                            buat contoh 10 past countinouse tensemenggunakan when/while rumus S+TOBE+WAS/WERE+INGmenggunakan when/while</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-contoh-percakapan-bahasa-inggris-setuju-dan-tidak-setuju-tentang-while-animals">5.
+                                            Buat contoh percakapan bahasa inggris setuju dan tidak setuju tentang "While Animals"</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-contoh-dialog-menggunakan-when-dan-while">6.
+                                            buatlah contoh dialog menggunakan when dan while </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikan-contoh-program-java-while-dan-jelaskan-fungsinya">7.
+                                            Berikan contoh program java while dan jelaskan fungsinya!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-contoh-10-past-countinouse-tensemenggunakan-whenwhile-rumus-stobewaswereingmenggunakan-whenwhile">8.
+                                            buat contoh 10 past countinouse tensemenggunakan when/while rumus S+TOBE+WAS/WERE+INGmenggunakan when/while</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-3-contoh-algoritma-pengulangan-for-while-do-dan-do-while-dalam-c">9.
+                                            sebutkan 3 contoh algoritma pengulangan for , while do , dan do while dalam c++</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#10-contoh-conjunction-menggunakn-while">10.
+                                            10 contoh conjunction menggunakn while</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kalimat-the-past-continous-tense-with-while">11.
+                                            contoh kalimat the past continous tense with while</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-penggabungan-switch-case-dan-do-while-d-borland-c">12.
+                                            Contoh penggabungan switch case Dan do while  d borland c++</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-tulis-dan-jelaskan-jenis-jenis-tipe-data-pada-pemrograan-dasa-serta-berikan-contoh2-tulis-dan-jelaskandeskripsikan-struktur-perulangan-while-dan-do-while3buatlah-masing-masing-1-algoritma-d">13.
+                                            1.tulis dan jelaskan jenis -jenis tipe data pada   pemrograan dasa serta berikan contoh?
+2.tulis dan jelaskan/deskripsikan struktur perulangan while dan do while?
+3:buatlah masing masing 1 algoritma dan flowchart dari struktur while dan do while?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kalimat-yang-menggunakan-kata-when-dan-while">14.
+                                            contoh kalimat yang menggunakan kata when dan while</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kalimat-yang-menggunakan-kata-while-beserta-artinya%e2%80%8b">15.
+                                            contoh kalimat yang menggunakan kata while beserta artinya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#10-contoh-conjunction-menggunakan-while">16.
+                                            10 contoh conjunction menggunakan while</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsinya-when-or-while-contohnya">17.
+                                            fungsinya when or while + contohnya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-contoh-kalimat-menggunakan-when-dan-while-masing-masing-4">18.
+                                            buatlah  contoh kalimat menggunakan when dan while. masing masing 4</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-contoh-10-past-countinouse-tensemenggunakan-whenwhile-rumus-stobewaswereingmenggunakan-whenwhile">19.
+                                            buat contoh 10 past countinouse tensemenggunakan when/while rumus S+TOBE+WAS/WERE+INGmenggunakan when/while</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-2-contoh-kalimat-k2k-dengan-pola-bersamaan-while">20.
+                                            Buatlah 2 contoh Kalimat K2K dengan pola bersamaan (while) *</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-penggunaan-when-dan-while-dalam-bahasa-inggris">21.
+                                            contoh penggunaan "when" dan "while" dalam bahasa inggris</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-5-contoh-progamifswitch-caseforwhilewhile-do-dalam-c">22.
+                                            
+buatlah 5 contoh progam,if,switch case,for,while,while do dalam C++!!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#carilah-contoh-for-do-dan-while-do-lengkap-beserta-contoh-program">23.
+                                            Carilah Contoh For-Do dan While-Do Lengkap Beserta Contoh Program</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kalimat-menggunakan-kata-while">24.
+                                            contoh kalimat menggunakan kata while</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#penjelasan-tentang-while-loop-beserta-contoh-programnya-di-java">25.
+                                            penjelasan tentang while loop, beserta contoh programnya di java</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-contoh-algoritma-dengan-membuat-program-dan-flowchart-untuk-struktur-looping-while-do-while-dan-for">26.
+                                            Buatlah contoh algoritma dengan membuat program dan flowchart untuk struktur looping while, do... while dan for</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kalimat-past-continous-tense-dengan-kalimat-while">27.
+                                            contoh kalimat past continous tense dengan kalimat while</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-contoh-10-past-countinouse-tensemenggunakan-whenwhile-rumus-stobewaswereingmenggunakan-whenwhile">28.
+                                            buat contoh 10 past countinouse tensemenggunakan when/while rumus S+TOBE+WAS/WERE+INGmenggunakan when/while</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-10-contoh-kalimat-bebas-yang-menggunakan-while-%e2%80%8b">29.
+                                            Buatlah 10 contoh kalimat bebas yang menggunakan " While" .​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berilah-5-contoh-kalimat-while">30.
+                                            Berilah 5 contoh kalimat while </a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="10-contoh-when-dan-10-contoh-while">
+                            1. 10 contoh when dan 10 contoh while</h2><br />
+                        When:<br />1. I was walking in the park when I met my old friend<br />2. I was sleeping when my sister knocked ny door<br />3. When are you going back to your hometown? <br />4. She looks healthy when I visited her last month<br />5. He was a talented singer when he was young <br />
+                                            <h2 class="ez-toc-section" id="3-contoh-when-dan-while">
+                            2. 3 contoh when dan while</h2><br />
+                        ----Jawaban----<br />- My mother was preparing dinner when my father came in. (When)<br />- I was eating when my friend punched me. (When)<br />- He took my glass while I was going to the restroom. (While)Answer:<br />_______<br />=&gt; i was studying when Ani came to my house<br />=&gt; There were playing football when I arrived at Tuti's house<br />=&gt; she was watching tv in the living room when I knocked the door of her house<br /><br />=&gt; While i was taking a bath, a cat ran in front of me<br />=&gt; while she was having lunch, her sister was singing in the living room<br />=&gt; while I was Studying, My mother was cooking in the kitchen<br /><br />*Thanks*<br /><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-contoh-kalimat-while">
+                            3. sebutkan contoh kalimat while</h2><br />
+                        While my brother was sleeping at home, I was playing outside.
+(Ketika saudara saya sedang tidur di rumah, saya bermain di luar.)While I was studying in the library, someone greeted me.<br />(Ketika saya sedang belajar di perpustakaan, seseorang menyapa saya.)<br />
+                                            <h2 class="ez-toc-section" id="buat-contoh-10-past-countinouse-tensemenggunakan-whenwhile-rumus-stobewaswereingmenggunakan-whenwhile">
+                            4. buat contoh 10 past countinouse tensemenggunakan when/while rumus S+TOBE+WAS/WERE+INGmenggunakan when/while</h2><br />
+                        -he is was playing<br />-we are were making cook<br />-I am was sleeping<br />-you are were reading books<br />-she is was speaking in the class<br />-they are were talking<br />-he is was going to school<br />.maaf kalau salah..☺<br />
+                                            <h2 class="ez-toc-section" id="buat-contoh-percakapan-bahasa-inggris-setuju-dan-tidak-setuju-tentang-while-animals">
+                            5. Buat contoh percakapan bahasa inggris setuju dan tidak setuju tentang "While Animals"</h2><br />
+                        bro maksudnya while atau wild <br />sementara atau liar <br />
+                                            <h2 class="ez-toc-section" id="buatlah-contoh-dialog-menggunakan-when-dan-while">
+                            6. buatlah contoh dialog menggunakan when dan while </h2><br />
+                        A : hi B ! how are you ?<br />B : hi A ! i am fine, thanks<br />A : would you like to hear a story from me ?<br />B : sure, i would like to<br />A : when i was kid, i use the garden as a train field. You know, i want to be a military when i was kid<br />B : really ? so you keep training while your friend is playing ?<br />A : yeah<br />Ana : Hi Lily ! How are you ? <br />Lily : Hi Ana ! Im fine thanks. How about you ?<br />Ana : Im fine thankyou.Btw when do you want to go to my house ?<br />Lily : I have to ask my mom first because tomorrow I have to take care my sister while my mother is working. <br />Ana : Okay then , see you<br />Lily : See you<br />
+                                            <h2 class="ez-toc-section" id="berikan-contoh-program-java-while-dan-jelaskan-fungsinya">
+                            7. Berikan contoh program java while dan jelaskan fungsinya!</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. <strong>counted</strong><strong> </strong><strong>loop</strong><strong> </strong><strong>:</strong></p><p>perulangan yang jumlah peluangannya terhitung atau tertentu</p><p>2. <strong>uncounted</strong><strong> </strong><strong>loop</strong><strong> </strong><strong>:</strong></p><p>perulangan yang jumlah perulangannya tidak terhitung atau tidak tentu</p><p><strong>Penjelasan:</strong></p><p><strong>jangan</strong><strong> lupa</strong><strong> klik</strong><strong> jawaban</strong><strong> terbaik</strong><strong> </strong><strong>t</strong></p><br />
+                                            <h2 class="ez-toc-section" id="buat-contoh-10-past-countinouse-tensemenggunakan-whenwhile-rumus-stobewaswereingmenggunakan-whenwhile">
+                            8. buat contoh 10 past countinouse tensemenggunakan when/while rumus S+TOBE+WAS/WERE+INGmenggunakan when/while</h2><br />
+                        1.I was sleeping when she was coming<br />2.They were listening the music while they were mealing<br />3.She was cooking while she was singing<br />4.He was playing when her mom was sweeping<br />5.We were laughing when she was joking<br />6.She was running while she was singing<br />7.You Were sitting when I was calling you<br />8.They were crying when I was going<br />9.I and my family were cleaning while we were enjoying<br />10.He was talking when I was sleeping<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-3-contoh-algoritma-pengulangan-for-while-do-dan-do-while-dalam-c">
+                            9. sebutkan 3 contoh algoritma pengulangan for , while do , dan do while dalam c++</h2><br />
+                        1. Contoh Program Perulangan FOR<br /><br />Kebanyakan orang lebih suka menggunakan perulangan ini karena bentuknya yang lebih simpel, namun dalam keadaan tertentu perulangan ini tidak dapat menyelesaikan masalah. Mungkin jika ada kasus yang tidak bisa atau bingung untuk kalian kerjakan, silahkan tanya ke admin saja ya. Perhatikan Kode program dibawah ini : <br /><br />#include &lt;iostream&gt; using namespace std; void output(); int main() {     int a,b;     b=5;         for(a=1; a&lt;=b; a++)     {         cout &lt;&lt; a &lt;&lt;". Perulangan For";         if(a%2==0)         {             cout&lt;&lt;"   Programming Is Art";         }         cout &lt;&lt;endl;     } } Output Program :<br /><br /><br />Output Program FOR<br />Penjelasan :<br />Alur Program ini adalah, program akan mengoutputkan kalimat "Perulangan For" sebanyak 5 kali, tetapi saat perulangan berada pada urutan genap, maka program akan mengoutputkan kalimat "Programming Is Art". Kasus tersebut sangatlah mudah, Perulangan sebanyak 5 kali. Pada Listing Kode di atas, untuk mendapatkan perulangan 5 kali, maka kita membuat " for (a=1; a&lt;=b; a++)" , maka dengan itu perulangan akan berulang sebanyak 5 kali, untuk menampilkan kalimat yang kedua yang muncul pada urutan genap, maka kita memanfaatkan perintah IF , yaitu "if (a%2==0)".<br /><br />2. Contoh Program Perulangan While<br /><br />Untuk Perulangan while, kita akan menggunakan kasus yang sama seperti contoh sebelumnya, berikut listing programnya :<br /><br />#include &lt;iostream&gt; using namespace std; void output(); int main() {     int a,b;     a=1;     b=5;         while(a&lt;=b)     {         cout &lt;&lt; a &lt;&lt;". Perulangan while";         if(a%2==0)         {             cout&lt;&lt;"   Programming Is Art";         }         cout &lt;&lt;endl;         a++;     } } Output Program :<br /><br />Output Program WHILE<br />Penjelasan :<br />Antara Listing Program perulangan while dengan perulangan for sangat mirip bukan? hanya berbeda letak kondisi dan aksinya saja. Pada Perulangan while, kondisi berada di awal yaitu pada "while (a&lt;=b)" dan aksi untuk perulangan berada di akhir yaitu pada "a++".<br /><br /><br />3. Contoh Program Perulangan DO-WHILE<br /><br />Masih Menggunakan Kasus sebelumnya, langsung saja berikut Listing Programnya :<br /><br />#include &lt;iostream&gt; using namespace std; void output(); int main() {     int a,b;     a=1;     b=5;         do     {         cout &lt;&lt; a &lt;&lt;". Perulangan do-while";         if(a%2==0)         {             cout&lt;&lt;"   Programming Is Art";         }         cout &lt;&lt;endl;         a++;     }while(a&lt;=b); } Output Program :<br /><br />Output Program DO-WHILE<br />Penjelasan :<br />Untuk Perulangan yang ini, perbedaannya adalah Statement dikerjakan terlebih dahulu , kemudian aksi, dan yang terakhir adalah pengecekan kondisi.<br /><br />
+                                            <h2 class="ez-toc-section" id="10-contoh-conjunction-menggunakn-while">
+                            10. 10 contoh conjunction menggunakn while</h2><br />
+                        Sy beri contoh lima ya. 1) she was watering the plant while i was sweeping the floor. 2) my mother was cooking while my sister was washing the dishes. 3) my father was cleaning his motorcycle while my brother was gardening. 4) they were playing football while we were playing volleyball. 5) the children were singing when the teachers were meeting.1. while i was studying, the telephone rang<br />2. i was eating while he was drinking<br />3. mother was cooking while dad was reading the newspaper<br />4. she came while i was taking a bath<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="contoh-kalimat-the-past-continous-tense-with-while">
+                            11. contoh kalimat the past continous tense with while</h2><br />
+                        it started to rain, <strong>while</strong> we were having the picnic. <br />di balik juga bisa ..<br /><strong>while  </strong>we were having the picnic, it started to rain.<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="contoh-penggabungan-switch-case-dan-do-while-d-borland-c">
+                            12. Contoh penggabungan switch case Dan do while  d borland c++</h2><br />
+                        Shift+ Home<br />Home + end<br />
+                                            <h2 class="ez-toc-section" id="1-tulis-dan-jelaskan-jenis-jenis-tipe-data-pada-pemrograan-dasa-serta-berikan-contoh2-tulis-dan-jelaskandeskripsikan-struktur-perulangan-while-dan-do-while3buatlah-masing-masing-1-algoritma-d">
+                            13. 1.tulis dan jelaskan jenis -jenis tipe data pada   pemrograan dasa serta berikan contoh?
+2.tulis dan jelaskan/deskripsikan struktur perulangan while dan do while?
+3:buatlah masing masing 1 algoritma dan flowchart dari struktur while dan do while?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Jawabn Nomor 1.</p><p>=&gt; Integer, merupakan bilangan bulat. Contohnya adalah -3, -2, -1, 0, 1, 2, 3.</p><p>=&gt; Float, merupakan bilangan pecahan. Contohnya adalah 3.14, 6.3.</p><p>=&gt; Boolean, merupakan nilai kebenaran yang hanya berisi True dan False.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="contoh-kalimat-yang-menggunakan-kata-when-dan-while">
+                            14. contoh kalimat yang menggunakan kata when dan while</h2><br />
+                        i done my homework when you was coming.<br /><br />my mother was cooking in the kitchen while my father was reading in the livingroom.<br />
+                                            <h2 class="ez-toc-section" id="contoh-kalimat-yang-menggunakan-kata-while-beserta-artinya%e2%80%8b">
+                            15. contoh kalimat yang menggunakan kata while beserta artinya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>while we drink a Starbucks we accidentally saw an artist</p><p><strong>Penjelasan:</strong></p><p>saat kami minum Starbucks kami tidak sengaja melihat artist</p><p>The Answer:</p><strong>While i was cooking</strong><strong>, he knocked the door</strong>. [Sewaktu aku sedang memasak, dia mengetuk pintu]<strong>Stay here for a while</strong>. [Tunggu di sini sebentar]<strong>While you wait, do you want to play Candy Crush with me?</strong> [Sambil menunggu, maukah kamu bermain Candy Crush denganku?]<strong>Took me a while to finish answering your questiom</strong>. [Aku membutuhkan waktu beberapa saat untuk selesai menjawab pertanyaanmu]<p></p>Explanation<p><strong>While</strong><strong> </strong>adalah kata yang sering digunakan untuk menyatakan durasi atau periode waktu tertentu pada suatu kalimat. </p><p></p><p>—</p><p><strong>Notes</strong><strong>:</strong></p><p></p>While dapat berupa kata benda, misalnya terdapat pada kalimat <strong>took me a while to finish answering your question</strong>.While dapat juga berupa kata penghubung misalnya terdapat pada kalimat <strong>while I was cooking, he knocked the door</strong>.<p>-</p><p>Secara umum arti kata while dalam Bahasa Indonesia adalah:</p><p></p>Sementara waktuBeberapa saatSelagiSementaraSewaktu<p>—</p>Read More<p><strong>1</strong><strong>)</strong><strong> </strong>Apa saja contoh kata keterangan waktu dalam Bahasa Inggris:</p><p><strong>brainly.co.id/tugas/16144415</strong></p><p>—</p>KeywordsWhileNounConjunctionA word to indicate duration or a period of time<p>-</p>Solution Details<p>[tex]\bold {Subject\::}[/tex] English</p><p>[tex]\bold {Level\::}[/tex] Intermediate</p><p>[tex]\bold {Chapter\::}[/tex] Part of Speech</p><p>[tex]\bold {Code\::}[/tex] 5</p><br />
+                                            <h2 class="ez-toc-section" id="10-contoh-conjunction-menggunakan-while">
+                            16. 10 contoh conjunction menggunakan while</h2><br />
+                        i was sleep while my father came home<br />she was cry while the teacher asked her<br />my mother was cook while i did my homework<br />my sista was date while my brother watched tv<br />udin was happy while siti confused<br />5 contoh conjuction while: 1) i am reading a novel while my sister is coming. 2) he is doing his homework while the bell is ringing. 3) they are watching television while he is playing guitar. 4) nana is writing a letter while he is calling her. 5) we are having dinner while the baby is crying. (Conjungsi while digunakan untuk 2 kejadian yang SEDANG berlangsung bersamaan)<br />
+                                            <h2 class="ez-toc-section" id="fungsinya-when-or-while-contohnya">
+                            17. fungsinya when or while + contohnya</h2><br />
+                        When :<br />Menandakan suatu kegiatan yang diganggu oleh kegiatan lain.<br /><br />Contoh : I was reading when he called.<br />Arti : Aku sedang membaca saat dia memanggil.<br /><br />While :<br />Menandakan 2 kegiatan yang berjalan bersamaan (simultaneously).<br /><br />Contoh : I was watching TV while he cooked dinner.<br />Arti : Aku sedang menonton TV selagi dia masak makan malam.<br />
+                                            <h2 class="ez-toc-section" id="buatlah-contoh-kalimat-menggunakan-when-dan-while-masing-masing-4">
+                            18. buatlah  contoh kalimat menggunakan when dan while. masing masing 4</h2><br />
+                        When:<br />1) She was fat when she was fifteen<br />2) I was drinking milk when he suddenly came running in<br />3) When I was doing my homework, my father, who was working in the states, called me<br />4) My mom is always there when I need her<br />While:<br />1) She was dancing while he was singing<br />2) She stood up while he sat still<br />3) While you were crying like a baby in your room, I was busy doing all the houseworks<br />4) While he was sweeping the floor, she was watching him intentlywhen:<br />1. my mother was cooking in the kitchen when the phone rang.<br />2. he was cleaning his bike when i came.<br />3. she was reading a book when her mother called her.<br />4. we were playing football when the accident happened,<br /><br />while:<br />1. he was reading a newspaper while she was watching television.<br />2. my uncle was bringing my aunt's bag while my aunt was holding the fence.<br />3. he was singing a song while she was studying.<br />4. he was playing a guitar while we were playing flute.<br />
+                                            <h2 class="ez-toc-section" id="buat-contoh-10-past-countinouse-tensemenggunakan-whenwhile-rumus-stobewaswereingmenggunakan-whenwhile">
+                            19. buat contoh 10 past countinouse tensemenggunakan when/while rumus S+TOBE+WAS/WERE+INGmenggunakan when/while</h2><br />
+                        1. we were having breakfast when the phone rang.<br />2. I was studying when my sister ate.<br />3. He was watching TV when His Father arrived.<br />4. I was eating when my mother cooked.<br />5. My uncle was working when his son studied.<br />6. Rinto was going to school when his mother worked.<br />7. I was waiting while my friends went.<br />8. My sister was crying when My mother was angry.<br />9. They were laughing when they watched comedy movie.<br />10. The children were dancing when the teacher played the song.<br />
+                                            <h2 class="ez-toc-section" id="buatlah-2-contoh-kalimat-k2k-dengan-pola-bersamaan-while">
+                            20. Buatlah 2 contoh Kalimat K2K dengan pola bersamaan (while) *</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Last night I was watching TV while I was eating snack</p><p>I am cooking in the kitchen while I am talking on the phone</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="contoh-penggunaan-when-dan-while-dalam-bahasa-inggris">
+                            21. contoh penggunaan "when" dan "while" dalam bahasa inggris</h2><br />
+                        when are you coming here? (kapan kamu datang?)<br />while you stay here (sementara, kamu tinggal disini)<br /><br />
+                                            <h2 class="ez-toc-section" id="buatlah-5-contoh-progamifswitch-caseforwhilewhile-do-dalam-c">
+                            22. 
+buatlah 5 contoh progam,if,switch case,for,while,while do dalam C++!!</h2><br />
+                        progran for:<br />#include &lt;iostream&gt;<br /><br />using namespace std;<br /><br />int main()<br />{<br />    cout&lt;&lt;"MENCARI keliling persegi panjang"&lt;&lt;endl;<br />int n,l,p;<br />cout&lt;&lt;"masukan lebar =";cin&gt;&gt;l;<br />cout&lt;&lt;"masukan panjang =";cin&gt;&gt;p;<br />for (n=0;n&lt;=l; n++)<br />cout&lt;&lt;"keliling persegi panjang"&lt;&lt;n&lt;&lt;"="&lt;&lt;2*(p+l)&lt;&lt;endl;<br /><br />return 0;<br />}<br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="carilah-contoh-for-do-dan-while-do-lengkap-beserta-contoh-program">
+                            23. Carilah Contoh For-Do dan While-Do Lengkap Beserta Contoh Program</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Perbedaan For, While dan Do While :</p><p></p><p>For : Untuk mengulang suatu proses yang telah diketahui jumlahnya.</p><p></p><p>While : Untuk mengulang suatu proses yang belum diketahui jumlahnya. Pengecekan kondisi akan dilakukan terlebih dahulu. Jika kondisi masih bernilai true, maka looping akan terus berlanjut. Statement WHILE juga digunakan untuk menyatakan perulangan.</p><p>Do While : Sama seperti while, melakukan perulangan walaupun belum diketahui jumlahnya. Instruksi akan dijalankan lebih dahulu, kemudian dilakukan pengecekan kondisi apabila masih bernilai true maka looping akan terus berlanjut.</p><p> </p><p></p><p> </p><p>READ     CONTOH PERULANGAN FOR, WHILE &amp; DO WHILE MENGGUNAKAN C++</p><p></p><p>Contoh Perulangan For, While &amp; Do While menggunakan C++</p><p> 22 DEC, 2019 C++ HIRZI WIDYAN PUTRA</p><p>Kali ini saya akan membagikan project yang saya buat dengan C++ yaitu membuat perulangan dengan c++ menggunakan perulangan for, perulangan while dan menggunakan do while.</p><p></p><p>Kenapa C++? Karena biasa kita akan diajarkan untuk mengasah logika pemrograman kita menggunakan C++ hehe makanya sampai saat ini peminat C++ masih banyak ya untuk kalangan yang baru belajar untuk mengasah logikanya hehe</p><p></p><p></p><p> </p><p></p><p>Saya menggunakan Dev-C++ 5.7.1</p><p></p><p>Perbedaan For, While dan Do While :</p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="contoh-kalimat-menggunakan-kata-while">
+                            24. contoh kalimat menggunakan kata while</h2><br />
+                        i am sleeping while my brother is playing.<br />jadiin jawaban terbaik.im ran while my father reading<br />
+                                            <h2 class="ez-toc-section" id="penjelasan-tentang-while-loop-beserta-contoh-programnya-di-java">
+                            25. penjelasan tentang while loop, beserta contoh programnya di java</h2><br />
+                        While loop adalah perulangan yang akan terus berjalan selagi kondisinya TRUE <br /><br />contoh:<br /><br />public class perulangan {<br />    public static void main(String[]args){<br />   int i = 0;<br />   while(i &lt; 5){<br />   System.out.println("I sekarang " + i);<br />   i++;<br />   }<br />  }<br />}<br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="buatlah-contoh-algoritma-dengan-membuat-program-dan-flowchart-untuk-struktur-looping-while-do-while-dan-for">
+                            26. Buatlah contoh algoritma dengan membuat program dan flowchart untuk struktur looping while, do... while dan for</h2><br />
+                        <p>contoh algoritma dengan membuat program dan flowchart untuk struktur looping while, do... while dan for adalah sebagai berikut:</p><p>Program untuk mencetak angka genap dari 1-100 dengan for</p><p>#include&lt;stdio.h&gt;</p><p>int main()</p><p>{</p><p>     for(int i = 1; i &lt;= 100; i++)</p><p>     {</p><p>          if(i % 2 == 0) printf("%i ", i);</p><p>     }</p><p>     return 0;</p><p>}</p><p>Program untuk mencetak angka genap dari 1-100 dengan while</p><p>#include&lt;stdio.h&gt;</p><p>int main()</p><p>{</p><p>     int i = 1</p><p>     while(i &lt;= 100)</p><p>     {</p><p>          if(i % 2 == 0) printf("%i ", i);</p><p>          i++;</p><p>     }</p><p>     return 0;</p><p>}</p><p>Program untuk mencetak angka genap dari 1-100 dengan do.. while</p><p>#include&lt;stdio.h&gt;</p><p>int main()</p><p>{</p><p>     int i = 1</p><p>     do</p><p>     {</p><p>          if(i % 2 == 0) printf("%i ", i);</p><p>          i++;</p><p>     }</p><p>     while(i &lt;= 100)</p><p>     return 0;</p><p>}</p><p>Flowchart ada di lampiran</p>Pembahasan<p><strong>Pengertian Algoritma
+</strong></p><p>Algoritma adalah susunan logis dan sistematis dari langkah-langkah untuk memecahkan atau menyelesaikan suatu permasalahan. Misalnya adalah langkah – langkah untuk memasak mie instan, langkah – langkah yang dapat kita temukan di balik bungkus mie instan tersebut juga dapat kita sebut sebagai sebuah algoritma karena merupakan langkah-langkah untuk menyelesaikan permasalahan yaitu memasak mi instan menjadi matang.</p><p>Semakin kompleks suatu algoritma, semakin banyak pula statement di dalamnya dan tidak selamanya berurutan. Statement-statement ini perlu diseleksi dan disesuaikan dengan permasalahan dan prosedur menyelesaikan suatu masalah. Proses penyeleksian statement inilah yang disebut dengan percabangan.</p><p><strong>Pengertian perulangan dalam program</strong></p><p>Perulangan merupakan salah satu komponen yang sangat penting dalam pemrograman. Perulangan memungkinkan suatu program untuk melakukan proses berulang-ulang sesuai dengan kehendak programmer. Dalam bahasa C, terdapat fungsi untuk melakukan perulangan, yaitu for, while, dan do…while.
+</p><p>
+<strong>For
+</strong></p><p>For merupakan salah satu bentuk perulangan, yang memiliki ciri jumlah perulangan yang telah tetap. Syntax dari fungsi for adalah :
+</p><p>for(inisialisasi ; kondisi ; increment/decrement)
+</p><p>{
+</p><p>Statement…     -&gt; Statement2 yang akan diulang
+</p><p>}
+</p><p>
+<strong>While
+</strong></p><p>While merupakan bentuk perulangan yang memiliki ciri jumlah perulangan yang belum tetap. Yang perlu diperhatikan dalam while adalah teman-teman harus menetapkan dengan pasti kapan perulangan tersebut akan berhenti. Karena jika tidak, maka akan terjadi perulangan tak terbatas yang menyebabkan program menjadi crash.
+</p><p>Syntax:
+</p><p>while(kondisi)
+</p><p>{
+</p><p>	Statement…     -&gt; Statement2 yang akan diulang
+</p><p>}
+</p><p><strong>
+Nested Loop
+</strong></p><p>Bentuk perulangan sendiri dapat dibuat menjadi nested (bersarang). Jadi, di dalam perulangan ada perulangan lagi. Perlu diingat bahwa perulangan yang paling dalam akan menyelesaikan perulangannya dahulu sebelum perulangan di luarnya melanjutkan perulangan.</p><br /><p>Flowchart untuk semua perulangan adalah sama, karena prinsip perulangan adalah mengulangi program di dalamnya selama statement di dalam perulangan tersebut bernilai benar.</p><p><strong>Simbol-simbol dalam flowchart
+</strong></p><p>-Terminator/Simbol Titik Terminal menunjukkan permulaan (start) atau akhir (stop) dari suatu proses.
+</p><p>-Flow Line / garis alir adalah simbol yang digunakan untuk menghubungkan antara simbol yang satu dengan simbol yang lain (connecting line). Simbol ini juga berfungsi untuk menunjukkan arah aliran program.
+</p><p>-Processing Symbol / Simbol Proses digunakan untuk menunjukkan kegiatan yang dilakukan oleh komputer. Pada bidang industri (proses produksi barang), simbol ini menggambarkan kegiatan inspeksi atau yang biasa dikenal dengan simbol inspeksi
+</p><p>-Decision Symbol / Simbol Keputusan merupakan simbol yang digunakan untuk memilih proses atau keputusan berdasarkan kondisi yang ada. Simbol ini biasanya ditemui pada flowchart program.
+</p><p>-Input-Output / Simbol Keluar-Masuk menunjukkan proses input-output yang terjadi tanpa bergantung dari jenis peralatannya.
+</p><p>-Connector (On-page)  </p><p>Simbol ini fungsinya adalah untuk menyederhanakan hubungan antar simbol yang letaknya berjauhan atau rumit bila dihubungkan dengan garis dalam satu halaman
+</p><p>-Connector (Off-page)  </p><p>Sama seperti on-page connector, hanya saya simbol ini digunakan untuk menghubungkan simbol dalam halaman berbeda. label dari simbol ini dapat menggunakan huruf atau angka
+</p><p>-Preparation Symbol / Simbol Persiapan merupakan simbol yang digunakan untuk mempersiapkan penyimpanan di dalam storage.
+</p><br />Pelajari lebih lanjut<p>Program untuk mencetak deret yang dimulai dari 1 hingga n dengan n adalah bilangan bulat positif brainly.co.id/tugas/18575574</p><br />Detil Jawaban<p><strong>Kelas </strong>: 10</p><p><strong>Bab </strong>: Mengenal Pemrograman Komputer</p><p><strong>Kata Kunci</strong> : contoh algoritma dengan membuat program dan flowchart untuk struktur looping while, do... while dan for</p><br />
+                                            <h2 class="ez-toc-section" id="contoh-kalimat-past-continous-tense-dengan-kalimat-while">
+                            27. contoh kalimat past continous tense dengan kalimat while</h2><br />
+                        kategori : bahasa Inggris - past continuous tense vs past tense<br />kelas : SMA X<br /><br />pembahasan:<br />rumus past continuous tense adalah s + was/were + v-ing<br />pada penggunaan while, past continuous tense merupakan kejadian yang sedang berlangsung di waktu lampau bersamaan dengan suatu kejadian yang berbeda di waktu lampau pula.<br />while diartikan sementara itu.<br /><br />contoh : <br />i was cleaning the dishes while my mother was cooking our dinner.<br />she was reading a book while they were playing cards.<br />we were studying in the library while they were exercising at the school yard.<br />
+                                            <h2 class="ez-toc-section" id="buat-contoh-10-past-countinouse-tensemenggunakan-whenwhile-rumus-stobewaswereingmenggunakan-whenwhile">
+                            28. buat contoh 10 past countinouse tensemenggunakan when/while rumus S+TOBE+WAS/WERE+INGmenggunakan when/while</h2><br />
+                        Rumus SIMPLE PAST CONTINUOUS :<br />(+) S + was/were + Ving + O<br />(-) S + was/were + not + Ving + O<br />(?) Was/were + S + Ving + O +?<br /><br />SIMPLE PAST CONTINUOUS digunakan pada kalimat yang sudah terjadi di masa lampau, dimana pada saat tertentu sedang dikerjakan.<br /><br />SIMPLE PAST TENSE vs SIMPLE PAST CONTINUOUS<br /><br />Gunakan SIMPLE PAST CONTINUOUS pada kalimat kondisi yang dilakukan terlebih dahulu.<br /><br />Dan gunakan SIMPLE PAST TENSE pada kalimat kondisi yang dilakukan setelah kalimat kondisi yang pertama. Biasanya 2 kalimat tersebut dihubungkan dengan kata WHEN<br /><br />Jika 2 kalimat kondisi dilakukan bersamaan, gunakan SIMPLE PAST CONTINUOUS pada kedua kalimat tersebut. Biasanya menggunakan WHILE untuk menghubungkan 2 kalimat tersebut. <br /><br />Contoh kalimat :<br />1. The children were watching TV when their mother called<br /><br />2. When the teacher was teaching, the headmaster came in<br /><br />3. Lisa was doing her homework, when her brother disturbed her<br /><br />4. My mother was cooking dinner, when my father came home<br /><br />5. We were reading book at the library, when the bell rang<br /><br />6. She was cooking, while he was cleaning the dishes<br /><br />7. I was painting, while my sister was drawing<br /><br />8. They were going to school, while their father was going to the office<br /><br />9. My mother was gardening, while I was watering the flowers<br /><br />10. Mrs. Smith was feeding the baby while her children were playing football<br /><br />Hope this can help you<br />
+                                            <h2 class="ez-toc-section" id="buatlah-10-contoh-kalimat-bebas-yang-menggunakan-while-%e2%80%8b">
+                            29. Buatlah 10 contoh kalimat bebas yang menggunakan " While" .​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>While:</p><p>1) She was dancing while he was singing</p><p>2) She stood up while he sat still</p><p>3) While you were crying like a baby in your room, I was busy doing all the houseworks</p><p>4) While he was sweeping the floor, she was watching him intently</p><p><strong>Penjelasan:</strong></p><p>maaf itu doang yg tau:)</p><p></p><p>Bantu follow yh^^</p><p><strong>Jawaban:</strong></p><p>• While my brother was sleeping at home, I was playing outside.</p><p>• While he was working at the office, his wife was cooking at home.</p><p>• While he’s studying in his room, I’m watching TV in the living room</p><p>• We were playing football while they were swimming.</p><p>• You knocked on the door while she was taking a bath</p><p>• While I was studying in the library, someone greeted me.</p><p>• I was singing while he was writing</p><p>• My sister is doing her homework while someone knocks on the door</p><p>• The teacher is explaining the lesson while the students are paying attention</p><p>• My father is driving while mother is looking at the map</p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="berilah-5-contoh-kalimat-while">
+                            30. Berilah 5 contoh kalimat while </h2><br />
+                        While my brother was sleeping at home, I was playing outside.<br /> (Ketika saudara saya sedang tidur di rumah, saya bermain di luar.)<br /><br />While he was working at the office, his wife was cooking at home.<br /> (Ketika dia bekerja di kantor, istrinya memasak di rumah.)<br /><br />I HOPE THIS HELPS<br />1. Bela knocked on the door while he was taking a bath<br />2. Bela feel asleep while I was cooking for dinner<br />3. The bell always ring while you’re having a breakfast <br />4. my son walked the pet while I cooked for breakfast<br />5. It started raining while I was walking on the street<br /><br />^_^<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/gRWCZ0MEwbg?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>b_inggris</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/yang-termasuk-perangkat-proses-adalah.html">Yang Termasuk Perangkat Proses Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/nama-nama-dataran-rendah-pulau-maluku.html">Nama Nama Dataran Rendah Pulau Maluku</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/yang-termasuk-kalimat-terbuka-adalah.html">Yang Termasuk Kalimat Terbuka Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/prisma-segilima.html">Prisma Segilima</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/berikut-ini-termasuk-unsur-kebugaran-jasmani-kecuali.html">Berikut Ini Termasuk Unsur Kebugaran Jasmani Kecuali</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/contoh-penerapan-norma-kesusilaan.html">Contoh Penerapan Norma Kesusilaan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/siput-serangga-dan-cacing-termasuk-hewan.html">Siput Serangga Dan Cacing Termasuk Hewan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/berapa-lama-umar-bin-khattab-menjabat-sebagai-khalifah.html">Berapa Lama Umar Bin Khattab Menjabat Sebagai Khalifah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/apa-fungsi-dari-dial-plan-pada-konfigurasi-ekstensi-server-softswitch.html">Apa Fungsi Dari Dial Plan Pada Konfigurasi Ekstensi Server Softswitch</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/tujuan-berpidato-persuasif-tercapai-jika.html">Tujuan Berpidato Persuasif Tercapai Jika</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/tiga-kelipatan-pertama-dari-24-adalah.html">Tiga Kelipatan Pertama Dari 24 Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/tinggi-net-putra-adalah.html">Tinggi Net Putra Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/ciri-mendasar-yang-membedakan-suku-bangsa-adalah.html">Ciri Mendasar Yang Membedakan Suku Bangsa Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/urutan-peristiwa-dalam-suatu-cerita-disebut.html">Urutan Peristiwa Dalam Suatu Cerita Disebut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/jenis-limbah-lunak-anorganik.html">Jenis Limbah Lunak Anorganik</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/deutro-melayu-adalah.html">Deutro Melayu Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/animisme-dan-dinamisme-adalah.html">Animisme Dan Dinamisme Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/jenis-jenis-kebugaran-jasmani.html">Jenis Jenis Kebugaran Jasmani</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/jelaskan-yang-dimaksud-ideologi-terbuka.html">Jelaskan Yang Dimaksud Ideologi Terbuka</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/arti-supreme.html">Arti Supreme</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://inewsph.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://inewsph.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://inewsph.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://inewsph.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://inewsph.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

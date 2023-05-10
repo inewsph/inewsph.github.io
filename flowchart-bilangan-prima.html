@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flowchart Bilangan Prima - QnA</title>
+    <meta name="description" content="Flowchart Bilangan Prima, Flowchart mendeteksi Bilangan Prima, , , , 20_120 Mohammad Saffak, 2020-10-20T01:23:24.000000Z, 20, podaxweb: CONTOH FLOWCHART BILANGAN PRIMA, m2tpdx.blogspot.com, 716 x 1024, jpeg, , 20, flowchart-bilangan-prima, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Flowchart Bilangan Prima - QnA" />
+    <meta property="og:description" content="Flowchart Bilangan Prima, Flowchart mendeteksi Bilangan Prima, , , , 20_120 Mohammad Saffak, 2020-10-20T01:23:24.000000Z, 20, podaxweb: CONTOH FLOWCHART BILANGAN PRIMA, m2tpdx.blogspot.com, 716 x 1024, jpeg, , 20, flowchart-bilangan-prima, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Flowchart Bilangan Prima - QnA" />
+    <meta name="twitter:description" content="Flowchart Bilangan Prima, Flowchart mendeteksi Bilangan Prima, , , , 20_120 Mohammad Saffak, 2020-10-20T01:23:24.000000Z, 20, podaxweb: CONTOH FLOWCHART BILANGAN PRIMA, m2tpdx.blogspot.com, 716 x 1024, jpeg, , 20, flowchart-bilangan-prima, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://inewsph.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://inewsph.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://inewsph.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://inewsph.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://inewsph.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://inewsph.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://inewsph.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://inewsph.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Flowchart Bilangan Prima</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">harissetiawan29</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Flowchart+Bilangan+Prima" alt="Flowchart Bilangan Prima">
+                    </div>
+                    <p></p>
+                    <p>flowchart buat bilangan prima</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#flowchart-buat-bilangan-prima">1.
+                                            flowchart buat bilangan prima</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#struktur-flowchart-untuk-menentukan-bilangan-prima">2.
+                                            struktur flowchart untuk menentukan bilangan prima </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-membuat-flowchart-menentukan-bilangan-prima-atau-bukan">3.
+                                            bagaimana cara membuat flowchart menentukan bilangan prima atau bukan?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-flowchart-program-yang-dapat-mengetahui-apakah-suatu-bilangan-yang-dimasukkan-antara-1-%e2%80%93-100-merupakan-sebuah-bilangan-prima-atau-bukan">4.
+                                            Buatlah Flowchart program yang dapat mengetahui apakah suatu bilangan yang dimasukkan ( antara 1 – 100 ) merupakan sebuah bilangan prima atau bukan.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-flowchart-tentang-menghitung-bilangan-ganjil-dan-genap%e2%80%8b">5.
+                                            buat flowchart tentang menghitung bilangan ganjil dan genap​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#gimana-cara-membuat-flowchart-deret-bilangan-prima">6.
+                                            gimana cara membuat flowchart deret bilangan prima</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatkan-flowchart-menampilkan-bilangan-25-50%e2%80%8b">7.
+                                            buatkan flowchart menampilkan bilangan 25-50​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#flowchart-yang-menerima-sebuah-bilangan-men-decrement-bilangan-tersebut-dan-menampilkan-hasil-operasi">8.
+                                            flowchart yang menerima sebuah bilangan, men-decrement bilangan tersebut, dan menampilkan hasil operasi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-flowchart-untuk-menghitung-bilangan-fibonacci%e2%80%8b">9.
+                                            Buatlah flowchart untuk menghitung bilangan Fibonacci​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#flowchart-bilangan-ganjil-1-sampai-20%e2%80%8b">10.
+                                            flowchart bilangan ganjil 1 sampai 20​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-mengetahui-suatu-bilangan-adalah-genapganjil-flowchart">11.
+                                            2. Mengetahui Suatu Bilangan Adalah Genap/Ganjil ( Flowchart )</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#membuat-algoritma-flowchart-pseudecode-untuk-menentukan-bilangan-prima%e2%80%8b">12.
+                                            membuat algoritma (flowchart/ pseudecode) untuk menentukan bilangan prima​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-algorithma-flowchart-untuk-mencetak-n-buah-bilangan-prima-yang-pertama-tolong-dibantu-kakak-kakak-saya-blum-paham">13.
+                                            Buat algorithma + flowchart untuk mencetak N buah bilangan prima yang pertama.tolong dibantu kakak kakak , saya blum paham.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-pseudocode-flowchart-dan-program-untuk-1-menentukan-apakah-suatu-bilangan-merupakan-bilangan-prima-atau-bukan-2-program-untuk-menentukan-apakah-tahun-yang-diinputkan-termasuk-tahun-kabisa">14.
+                                            Buatlah pseudocode, flowchart dan program untuk :
+1.menentukan apakah suatu bilangan merupakan bilangan prima atau bukan ?
+2.Program untuk menentukan apakah tahun yang diinputkan termasuk tahun kabisat/bukan.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#diagran-flowchart-tentang-mencetak-jenis-bilangan">15.
+                                            Diagran flowchart tentang mencetak jenis bilangan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-flowchart-untuk-menghitung-bilangan-fibonacci">16.
+                                            Buatlah flowchart untuk menghitung bilangan fibonacci</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-flowchart-untuk-menentukan-apakah-bilangan-tersebut-bilangan-ganjil-atau-genap">17.
+                                            Buatlah flowchart untuk menentukan apakah bilangan tersebut bilangan ganjil atau genap</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#flowchart-menentukan-bilangan-terbesar-diantara-4-buah-bilangan-yg-diinputkan%e2%80%8b">18.
+                                            Flowchart menentukan bilangan terbesar diantara 4 buah bilangan yg diinputkan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#flowchart-bilangan-ganjil-dari-10-30">19.
+                                            flowchart bilangan ganjil dari 10-30</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-lah-algoritme-dan-flowchart-penjumlahan-tiga-buah-bilangan">20.
+                                            Buat lah algoritme dan flowchart penjumlahan tiga buah bilangan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-flowchart-menentukan-bilangan-terkecil-dari-2-bilangan%e2%80%8b">21.
+                                            buat flowchart menentukan bilangan terkecil dari 2 bilangan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#gambar-flowchart-untuk-memilih-satu-bilangan-terkecil-dari-empat-bilangan">22.
+                                            Gambar flowchart untuk memilih satu bilangan terkecil dari empat bilangan??</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-flowchart-menentukan-bilangan-bulat%e2%80%8b">23.
+                                            Buatlah flowchart menentukan bilangan bulat?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-pseudocodeflowchart-dan-program-untuk-1-menentukan-apakah-suatu-bilangan-merupakan-bilangan-prima-atau-bukan2-program-untuk-menentukan-apakah-tahun-yang-diinputkan-termasuk-tahun-kabisa">24.
+                                            Buatlah pseudocode,flowchart dan program untuk : 1. menentukan apakah suatu bilangan merupakan bilangan prima atau bukan?
+2. program untuk menentukan apakah tahun yang diinputkan termasuk tahun kabisat/bukan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#flowchart-bilangan-a-positif-atau-negatif%e2%80%8b">25.
+                                            Flowchart bilangan A positif atau negatif??​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-flowchart-menentukan-bilangan-terkecil-dari-4-bilangan%e2%80%8b">26.
+                                            buat flowchart menentukan bilangan terkecil dari 4 bilangan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#gambar-flowchart-untuk-memilih-satu-bilangan-terbesar-dari-empat-bilangan">27.
+                                            Gambar flowchart untuk memilih satu bilangan terbesar dari empat bilangan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-flowchart-untuk-menampilkan-hasil-perkalian-10-bilangan-genap-pertama2-flowchart-untuk-menampilkan-bilangan-terbesar-dari-10-bilangan-yang-diinputkanyang-bisa-bantu-ya-thx">28.
+                                            1. flowchart untuk menampilkan hasil perkalian 10 bilangan genap pertama
+2. flowchart untuk menampilkan bilangan terbesar dari 10 bilangan yang diinputkan
+yang bisa bantu ya.thx :)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jika-saya-memiliki-variable-x-dengan-isi-bilangan-real-seperti-9-8-6-7-7-8-dan-saya-ingin-membuat-flowchart-untuk-membedakan-antara-bilangan-real-genap-dan-ganjil-seperti-apa-flowchart-yang-harus">29.
+                                            jika saya memiliki variable x dengan isi bilangan real seperti 9.8 , 6.7 , 7.8 dan saya ingin membuat flowchart untuk membedakan antara bilangan real genap dan ganjil. seperti apa flowchart yang harus saya buat ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-algoritma-dan-flowchart-untuk-program-penentuan-bilangan-prima">30.
+                                            buatlah algoritma dan flowchart untuk program penentuan bilangan prima?</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="flowchart-buat-bilangan-prima">
+                            1. flowchart buat bilangan prima</h2><br />
+                        bilangan prima ; <br />1,3,5,7,11.........(jika di bagi angka selalu bersisa kecuali 1 dan angka itu sendiri ) <br /><br />input; variable ; <br />"a" = jumlah angka yang di masukkan <br /><br />proccess ; <br />*pemetaan "a" (bersusun menggunakan array) <br />a (1) - a (jumlah angka yang dimasukkan) ; misal; 1 - 15 <br /><br />*pemetaan untuk nilai pembagi "b"(bersusun menggunakan array) <br />b (1) - b (a(1) - a(jumlah angka yang dimasukkan)) <br /><br />*pembanding nilai "a" dan "b"bersusun <br />jika a / b(1) - b(a) = bilangan desimal atau bersisa <br /><br />berarti nilai (input, bersusun "a") merupakan bilangan prima <br /><br />penjelasan proses ; misalkan a(1)=1 =b(1), a(2)=2 =b(2), seterusnya <br />a(1) / b(1) <br />a(2) / b(1), a(2) / b(2) <br />a(3) / b(1), a(3) / b(2), a(3) / b(3) <br />dan seterusnya<br />
+                                            <h2 class="ez-toc-section" id="struktur-flowchart-untuk-menentukan-bilangan-prima">
+                            2. struktur flowchart untuk menentukan bilangan prima </h2><br />
+                        Flowchart adalah gambaran dalam bentuk diagram alir dari 
+algoritma-algoritma dalam suatu program, yang menyatakan arah alur 
+program tersebut.
+Berikut adalah beberapa simbol yang digunakan dalam menggambar suatu flowchart :
+
+
+
+<strong>SIMBOL</strong>
+<strong>NAMA</strong>
+<strong>FUNGSI</strong>
+
+
+<br /><strong>TERMINATOR</strong>
+Permulaan/akhir   program
+
+
+<br /><strong>GARIS ALIR</strong>
+<strong>(FLOW LINE)</strong>
+Arah aliran   program
+
+
+<br /><strong>PREPARATION</strong>
+Proses   inisialisasi/pemberian harga awal
+
+
+<br /><strong>PROSES</strong>
+Proses   perhitungan/proses pengolahan data
+
+
+<br /><strong>INPUT/OUTPUT DATA</strong>
+Proses   input/output data, parameter, informasi
+
+
+<br /><strong>PREDEFINED PROCESS </strong>
+<strong>(SUB PROGRAM)</strong>
+Permulaan sub   program/proses menjalankan sub program
+
+
+<br /><strong>DECISION</strong>
+Perbandingan   pernyataan, penyeleksian data yang memberikan pilihan untuk langkah   selanjutnya
+
+
+<br /><strong>ON PAGE CONNECTOR</strong>
+Penghubung   bagian-bagian flowchart yang berada pada satu halaman
+
+
+<br /><strong>OFF PAGE CONNECTOR</strong>
+Penghubung   bagian-bagian flowchart yang berada pada halaman berbeda
+
+
+
+Dari contoh algoritma di atas tentang menentukan apakah suatu 
+bilangan adalah bilangan ganjil atau bilangan genap, flowchart dari 
+program adalah sebagai berikut :
+
+
+
+<br />
+
+<br /><br />
+
+
+<strong>contoh soal</strong>
+Buat algoritma untuk menentukan apakah suatu bilangan merupakan 
+bilangan prima atau bukan, kemudian buat flowchart untuk program 
+tersebut !Buat algoritma untuk mencetak N buah bilangan prima yang pertama, kemudian buat flowchart untuk program tersebut !Buat algoritma untuk menentukan jenis akar dari suatu persamaan kuadrat, kemudian buat flowchart untuk program tersebut !Buat algoritma untuk menghitung jumlah N suku dari deret aritmatika berikut :
+Sn = 3 + 7 + 11 + …… + (4n-1)
+Buat algoritma untuk menghitung nilai faktorial dari suatu bilangan, kemudian buat flowchart untuk program tersebut !Buat flowchart untuk mencetak pasangan nilai X dan Y dimana hubungan antara X dan Y memenuhi persamaan Y = X3 – 2X +1 dan nilai x berubah dari –10 sampai 10 !<br /><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-membuat-flowchart-menentukan-bilangan-prima-atau-bukan">
+                            3. bagaimana cara membuat flowchart menentukan bilangan prima atau bukan?</h2><br />
+                        <p>Terlampir pada jawaban ini adalah contoh <strong>flowchart untuk menentukan apakah sebuah bilangan merupakan bilangan prima </strong>atau bukan. Adapun bilangan prima merupakan sebutan bagi bilangan-bilangan asli yang faktor pembaginya hanya angka 1 dan bilangan itu sendiri.</p><p></p>Pembahasan<p><strong>Algoritma </strong>merupakan tahapan-tahapan atau langkah-langkah yang disajikan dengan tujuan untuk menyampaikan solusi dari suatu permasalahan. <strong>Flowchart </strong>merupakan salah satu bentuk dari algoritma.</p><p>Flowchart adalah diagram atau bagan alur yang menampilkan langkah-langkah dan keputusan untuk melakukan suatu proses. Setiap tangkah dinyatakan dalam bentuk diagram yang saling terhubung dengan garis atau anak panah.</p><p>Flowchart dapat dibedakan menjadi beberapa jenis, yaitu:</p>Flowchart dokumen atau paperwork flowchart, yaitu flowchart yang berfungsi untuk menelusuri alur form dari satu bagian ke bagian yang lain, termasuk bagaimana laporan diproses, dicatat, dan disimpan.Flowchart program, yaitu flowchart yang berisi penggambaran rinci tentang suatu prosedur dari sebuah proses.Flowchart proses, yaitu flowchart yang menganalisis langkah-langkah dalam sebuah prosedur atau sistem.Flowchart sistem, yaitu flowchart yang menampilkan proses kerja yang sedang berlangsung dalam suatu keseluruhan sistem.Flowchart skematik, yaitu flowchart yang menampilkan alur prosedur suatu sistem (mirip flowchart sistem), namun menggunakan gambar-gambar atau simbol yang mempermudah pemahaman flowchart.<p></p>Pelajari lebih lanjutMateri tentang flowchart dan algoritma https://brainly.co.id/tugas/11916974Materi tentang flowchart https://brainly.co.id/tugas/18939148Materi tentang contoh diagram flowchart https://brainly.co.id/tugas/4059212Detail jawaban<p>Kelas: 10</p><p>Mapel: TIK</p><p>Bab: 6</p><p>Kode: 10.11.6</p><p></p><p><strong>#AyoBelajar #SPJ2</strong></p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-flowchart-program-yang-dapat-mengetahui-apakah-suatu-bilangan-yang-dimasukkan-antara-1-%e2%80%93-100-merupakan-sebuah-bilangan-prima-atau-bukan">
+                            4. Buatlah Flowchart program yang dapat mengetahui apakah suatu bilangan yang dimasukkan ( antara 1 – 100 ) merupakan sebuah bilangan prima atau bukan.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>Penjelasan:</strong></p><p>semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="buat-flowchart-tentang-menghitung-bilangan-ganjil-dan-genap%e2%80%8b">
+                            5. buat flowchart tentang menghitung bilangan ganjil dan genap​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Input bilangan = X, X bukan nol</p><p>---- mod (X, 2) = 0 {maka genap} </p><p>---- mod (X, 2) = 1 {maka ganjil} </p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p>Menggunakan fungsi mod. Sisa hasil da dari pembagian. </p><p>Misal X adalah bilangan yang diuji, X bukan nol. </p><p></p><p>Jika sisa pembagian X : 2 = 0</p><p>         Maka dapat dipastikan itu adalah bilangan genap. </p><p>Tapi jika sisa pembagian X : 2 = 1</p><p>         Maka X pasti bilangan ganjil. </p><br />
+                                            <h2 class="ez-toc-section" id="gimana-cara-membuat-flowchart-deret-bilangan-prima">
+                            6. gimana cara membuat flowchart deret bilangan prima</h2><br />
+                        itu tetetapne... di kali bilangan prima tersebut<br />
+                                            <h2 class="ez-toc-section" id="buatkan-flowchart-menampilkan-bilangan-25-50%e2%80%8b">
+                            7. buatkan flowchart menampilkan bilangan 25-50​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>pada bilangan1 akan dilakukan pengecekan. apakah bilangan1 kurang dari atau sama dengan bilangan2. Jika iya maka bilangan tersebut akan ditampilkan ( PRINT.. ) lalu bilangan1 ditambah 1, di cek lagi dst.</p><p>Sehingga jika dibuat program akan mengeluarkan output :</p><p>25 26 ..... 50</p><p>Semoga membantu.</p><br />
+                                            <h2 class="ez-toc-section" id="flowchart-yang-menerima-sebuah-bilangan-men-decrement-bilangan-tersebut-dan-menampilkan-hasil-operasi">
+                            8. flowchart yang menerima sebuah bilangan, men-decrement bilangan tersebut, dan menampilkan hasil operasi</h2><br />
+                        jajar genjang ,hehheh<br />
+                                            <h2 class="ez-toc-section" id="buatlah-flowchart-untuk-menghitung-bilangan-fibonacci%e2%80%8b">
+                            9. Buatlah flowchart untuk menghitung bilangan Fibonacci​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>fibonacci</p><p>jika anda tanyakan kata fibonacci pada ahli matematika, sebagian besar dari mereka mungkin akan menjawab deret hitung. Ya fibonacci memang lebih banyak dikenal dari deret hitung yang diciptakannya. Namun jika anda anyakan pada trader atau investor, jawaban mereka mungkin sangat berlainan dari deret hitung. Kebanyakan dari mereka mungkin akan menjawab fibonacci sebagai salah satu teknik analisa pergerakan harga. Khususnya mengenai support, resistance, dan retracement.</p><p>Leonardo Fibonacci merupakan ahli matematika, lahir di Italia sekitar tahun 1170. Dia, dianggap sebagai The Greatest European Mathematician of Middle Ages”, berhasil menemukan sebuah deret hitung matematika dan termasuk sebagai orang pertama yang memperkenalkan sistem angka Hindu – Arab.</p><p>1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, …. Itulah deret hitung fibonacci yang dihasilkan dengan menjumlahkan dua angka awal untuk mendapatkan angka-angka setelahnya. Angka-angka tersebut digunakan oleh Fibonacci untuk menjelaskan pertumbuhan ideal dari populasi kelinci. Dari deret hitung ini juga dihasilkan rasio-rasio yang banyak dikenal dengan sebutan golden ratio.</p><p></p><p>Contoh soal fibonacci :</p><p>1. User memasukan n=7</p><p>2. Kita list bilangan fibonacci yang kurang dari 2n (Ini didasarkan bahwa n bilangan ganjil pertama itu maksimal bernilai 2n-1). Jadi daftar bilangan fiibonacci yang didapat: 1, 2, 3, 5, 8, 13</p><p>3. Kita cek satu persatu, apakah bilangan fibonacci tersebut ganjil atau genap. Dari daftar fibonacci tersebut, yang ganjil adalah: 1, 3, 5, 13</p><p>4. Jadi jumlah yang dicari: 1 + 3 + 5 + 13 = 22, sama dengan di atas.</p><p><strong>Penjelasan:</strong></p><p>Maaf kalau salah</p><br />
+                                            <h2 class="ez-toc-section" id="flowchart-bilangan-ganjil-1-sampai-20%e2%80%8b">
+                            10. flowchart bilangan ganjil 1 sampai 20​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1,3,5,7,9,11,13,15,17,19</p><br />
+                                            <h2 class="ez-toc-section" id="2-mengetahui-suatu-bilangan-adalah-genapganjil-flowchart">
+                            11. 2. Mengetahui Suatu Bilangan Adalah Genap/Ganjil ( Flowchart )</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>Kita dapat menentukan apakah suatu bilangan masuk dalam kategori bilangan ganjil atau genap, cara menentukannya pun cukup mudah jika suatu bilangan dibagi dua tersisa 1 maka bilangan tersebut dikategorikan sebagai bilangan ganjil. Sedangkan suatu bilangan yang jika dibagi dua tidak menyisakan apa-apa atau 0 maka bilangan tersebut masuk sebagai bilangan genap. Kali ini kita akan mencoba menjabarkan algoritma flowchart untuk menentukan bilangan ganjil dan genap.</p><p>Untuk menentukan suatu bilangan merupakan bilangan ganjil atau genap kita menggunakan operasi modulus. Operasi modulus adalah sebuah operasi yang menghasilkan sisa pembagian dari suatu bilangan terhadap bilangan lainnya. Contoh 2 mod 2 menghasilkan nilai 0 karena 2 dibagi 2 tidak menghasilkan sisa pembagian alias null. sedangkan jika 3 mod 2 menghasilkan nilai 1 karena 3 dibagi 2 menghasilkan sisa pembagian. Didalam pemrograman operasi modulus menggunakan operator %.</p><p>Artikel Terkait : Menentukan bilangan ganjil genap di PHP</p><p>Flowchart adalah salah satu bentuk algoritma yang banyak digunakan untuk menggambarkan proses pada suatu sistem yang berjalan. Algoritma digambarkan dalam bentuk simbol-simbol yang memberi arti/makna. Dalam kasus ini ada beberapa simbol yang akan kita gunakan yaitu simbol terminal untuk menunjukan awalan dan akhiran, simbol input/output untuk menunjukan proses masukan dan keluaran , dan simbol proses sebagai simbol kegiatan yang dilakukan komputer.</p><p></p><p>Algoritma Menentukan Bilangan Ganjil dan Genap</p><p></p><p>Mulai</p><p></p><p>Inisialisasi Variabel bil</p><p></p><p>Masukan nilai pada variabel bil</p><p></p><p>Nilai bil modulus 2</p><p></p><p>Jika menghasilkan 0 tampilkan, ‘Bilangan genap’ jika tidak tampilkan ‘Bilangan ganjil’</p><p></p><p>Selesai</p><p></p><p>Flowchart</p><p></p><p>￼￼</p><p></p><p>Penjelasan:</p><p></p><p>Pada flowchart diatas diawali dengan simbol terminal dengan kata ‘mulai’ untuk mengawali proses algortima, kemudian diarahkan ke simbol proses untuk deklarasi variabel dengan nama bil. Selanjutnya ada simbol input dimana pengguna memasukan nilai pada variabel bil. Kemudian terdapat percabangan dengan kondisi variabel bil modulus 2 apakah menghasilkan nilai 0 ? jika kondisi bernilai benar (true) maka tampilkan kalimat ‘Bilangan Genap’ dengan menggunakan simbol output, begitu juga jika bernilai salah (false) menampilkan kalimat ‘Bilangan Ganjil’. Proses akan mengarah pada simbol terminal ‘Selesai’ sebagai tanda berakhirnya proses.</p><p></p><p>Kesimpulan</p><p></p><p>Sekian pembahasan kali ini mengenai contoh flowchart menentukan bilangan ganjil dan genap. Semoga bermanfaat buat kalian semua, silahkan pelajari contoh-contoh flowchart lainnya yang sudah saya bahas di situs ini. Silahkan kirim komentar kalian jika ada yang ingin ditanyakan, sampai jumpa terimakasih.</p><p></p><p>Category: Flowchart Tag: flowchart menampilkan bilangan genap, flowchart menentukan bilangan ganjil atau genap</p><br />
+                                            <h2 class="ez-toc-section" id="membuat-algoritma-flowchart-pseudecode-untuk-menentukan-bilangan-prima%e2%80%8b">
+                            12. membuat algoritma (flowchart/ pseudecode) untuk menentukan bilangan prima​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Inisialisasi :
+</p><p>int bil,n,m
+</p><p>char lagi
+;</p><p>Deskripsi  =</p><p>Input bil
+;</p><p>Inisialisasi variable n=0
+</p><p>Proses perulangan program atau looping dari m=1 sampai m&lt;=bil dimana for (m=1;m&lt;=bil;m++)
+</p><p>Hitung sisa bagi antara bil %(mod) m, bula terdapat sisa bagi dengan hasil 0, maka jumlahkan n dengan angka 1 sehingga hasilnya n++.
+</p><p>Jika n=2 maka -&gt; cetak atau print "Merupakan Bilangan Prima"
+</p><p>Jika pilihan tidak maka -&gt; cetakatau print  "Bukan Bilangan Prima"
+</p><p>Apakah kamu ingin mengulang program [Y/N]?
+</p><p>Jika [Y] -&gt; maka akan mengulang langkah (1-6)
+</p><p>Jika tidak -&gt; maka program selesai (terima kasih) \</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="buat-algorithma-flowchart-untuk-mencetak-n-buah-bilangan-prima-yang-pertama-tolong-dibantu-kakak-kakak-saya-blum-paham">
+                            13. Buat algorithma + flowchart untuk mencetak N buah bilangan prima yang pertama.tolong dibantu kakak kakak , saya blum paham.</h2><br />
+                        algoritma =&gt; <br />perulangan dari 2 sampai dengan N, dan jika hasil perulangan sama dengan bilangan prima (bilangan yang faktornya hanya 1 dan bilangan itu sendiri) maka akan ditampilkan.<br /><br />flowChart =&gt;<br />start -&gt; input N -&gt; perulangan (for) dari 2 sampai N -&gt; jika (if) faktor == 1 / variable perulangan. <br />-&gt; cetak bilangan <br />-&gt; else (jika salah) jangan dicetak.<br /><br />semoga membantu (:<br />
+                                            <h2 class="ez-toc-section" id="buatlah-pseudocode-flowchart-dan-program-untuk-1-menentukan-apakah-suatu-bilangan-merupakan-bilangan-prima-atau-bukan-2-program-untuk-menentukan-apakah-tahun-yang-diinputkan-termasuk-tahun-kabisa">
+                            14. Buatlah pseudocode, flowchart dan program untuk :
+1.menentukan apakah suatu bilangan merupakan bilangan prima atau bukan ?
+2.Program untuk menentukan apakah tahun yang diinputkan termasuk tahun kabisat/bukan.</h2><br />
+                         #include &lt;iostream.h&gt;<br />#include &lt;conio.h&gt;<br />int main()<br />{<br />int x,y;<br />cout&lt;&lt;"Menentukan bilangan prima atau bukan\n";<br />cout&lt;&lt;"Masukkan bilangan: ";cin&gt;&gt;x;<br />y=0;<br />for(int i=1; i&lt;=x; i++)<br />if(x%i==0)<br />y++;<br />if(y==2)<br />cout&lt;&lt;x&lt;&lt;" adalah bilangan prima";<br />else<br />cout&lt;&lt;x&lt;&lt;" bukan bilangan prima";<br />getch();<br />}<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="diagran-flowchart-tentang-mencetak-jenis-bilangan">
+                            15. Diagran flowchart tentang mencetak jenis bilangan</h2><br />
+                        <p></p><p><strong>Penjelasan:</strong></p><p>palajaran apaan ya kk ?</p><p>maaf kalo Gk jwb</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-flowchart-untuk-menghitung-bilangan-fibonacci">
+                            16. Buatlah flowchart untuk menghitung bilangan fibonacci</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>fibonacci</p><p></p><p>jika anda tanyakan kata fibonacci pada ahli matematika, sebagian besar dari mereka mungkin akan menjawab deret hitung. Ya fibonacci memang lebih banyak dikenal dari deret hitung yang diciptakannya. Namun jika anda anyakan pada trader atau investor, jawaban mereka mungkin sangat berlainan dari deret hitung. Kebanyakan dari mereka mungkin akan menjawab fibonacci sebagai salah satu teknik analisa pergerakan harga. Khususnya mengenai support, resistance, dan retracement.</p><p></p><p>Leonardo Fibonacci merupakan ahli matematika, lahir di Italia sekitar tahun 1170. Dia, dianggap sebagai The Greatest European Mathematician of Middle Ages”, berhasil menemukan sebuah deret hitung matematika dan termasuk sebagai orang pertama yang memperkenalkan sistem angka Hindu – Arab.</p><p></p><p>1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, …. Itulah deret hitung fibonacci yang dihasilkan dengan menjumlahkan dua angka awal untuk mendapatkan angka-angka setelahnya. Angka-angka tersebut digunakan oleh Fibonacci untuk menjelaskan pertumbuhan ideal dari populasi kelinci. Dari deret hitung ini juga dihasilkan rasio-rasio yang banyak dikenal dengan sebutan golden ratio.</p><p></p><p>Contoh soal fibonacci :</p><p></p><p>1. User memasukan n=7</p><p></p><p>2. Kita list bilangan fibonacci yang kurang dari 2n (Ini didasarkan bahwa n bilangan ganjil pertama itu maksimal bernilai 2n-1). Jadi daftar bilangan fiibonacci yang didapat: 1, 2, 3, 5, 8, 13</p><p></p><p>3. Kita cek satu persatu, apakah bilangan fibonacci tersebut ganjil atau genap. Dari daftar fibonacci tersebut, yang ganjil adalah: 1, 3, 5, 13</p><p></p><p>4. Jadi jumlah yang dicari: 1 + 3 + 5 + 13 = 22, sama dengan di atas.</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-flowchart-untuk-menentukan-apakah-bilangan-tersebut-bilangan-ganjil-atau-genap">
+                            17. Buatlah flowchart untuk menentukan apakah bilangan tersebut bilangan ganjil atau genap</h2><br />
+                        itu sederhananya menentukan apakah iu bilangan ganjil atau genap<br />
+                                            <h2 class="ez-toc-section" id="flowchart-menentukan-bilangan-terbesar-diantara-4-buah-bilangan-yg-diinputkan%e2%80%8b">
+                            18. Flowchart menentukan bilangan terbesar diantara 4 buah bilangan yg diinputkan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>Algoritma</strong> </p><p>menentukan_bilangan_terbesar</p><p>            {mencari bilangan terbesar dari 3 bilangan yang diinput}</p><p><strong>Deklarasi</strong></p><p>            Integer a,b,c,terbesar;</p><p><strong>Deskripsi</strong></p><p>            Write(“Masukkan Bilangan Pertama : ”);</p><p>            Read(a);</p><p>            Write(“Masukkan Bilangan Kedua : ”);</p><p>            Read(b);</p><p>            Write(“Masukkan Bilangan Ketiga : ”);</p><p>            Read(c);</p><p>            if (a&gt;b) then</p><p>                        if (a&gt;c)</p><p>                                    then write(“Terbesar = ”,a);</p><p>                                    else wrie(“Terbesar = ”,c);</p><p>                        endif</p><p>            else if (b&gt;c)</p><p>                        then write(“Terbesar = ”,b);</p><p>                        else write(“Terbesar = ”,c);</p><p>            endif</p><p>            endif</p><p></p><p>Maaf itu kode program yg saya buat hanya 3 buah bilangan yg diinputkan.. Tinggal anda kreasikan sendiri.. </p><p></p><p>#jadikanyangterbaik :)</p><br />
+                                            <h2 class="ez-toc-section" id="flowchart-bilangan-ganjil-dari-10-30">
+                            19. flowchart bilangan ganjil dari 10-30</h2><br />
+                        11 13 15 17 19 21 23 25 27 29 <br />
+                                            <h2 class="ez-toc-section" id="buat-lah-algoritme-dan-flowchart-penjumlahan-tiga-buah-bilangan">
+                            20. Buat lah algoritme dan flowchart penjumlahan tiga buah bilangan</h2><br />
+                        <p>Buatlah flowchart untuk pembagian 3 buah bilangan
+</p><p>Buatlah flowchart untuk menghitung nota pembelian yang ditambah dengan pajak
+</p><p>
+</p><p>2 Percabangan
+</p><p>3 Percabangan
+</p><p>Pemilihan satu pernyataan yang akan dijalankan dimana pemilihan itu didasarkan pada kondisi tertentu
+</p><p>Terdapat 2 jenis struktur yang digunakan yaitu IF dan switch
+</p><p>Statement yang terdapat dalam sebuah blok percabangan akan dieksekusi hanya jika kondisi yang didefenisikan terpenuhi (bernilai benar).
+</p><p>
+</p><p>4 Percabangan
+</p><p>Artinya jika kondisi tidak terpenuhi (bernilai salah) maka statement tersebut juga tidak ikut dieksekusi atau dengan kata lain diabaikan oleh kompiler.
+</p><p>Percabangan dapat terdiri dari 1 kondisi atau lebih
+</p><p>
+</p><p>5 Percabangan
+</p><p>Contoh : jika Ani mendapat nilai 10 maka Ani akan mendapat hadiah
+</p><p>Kata Kunci dari kalimat diatas adalah nilai 10
+</p><p>Artinya hadiah akan didapat oleh Ani jika mendapat nilai 10, sebaliknya jika nilai dibawa 10 maka Ani tidak akan mendapat hadiah.
+</p><p>
+</p><p>6 Struktur Satu Kondisi if….then
+</p><p>Pernyataan IF sederhana
+</p><p>Jika hanya terdapat 1 statement
+</p><p>If (kondisi)
+</p><p>Pernyataan;
+</p><p>Keterangan :
+</p><p>Kondisi = untuk menentukan pengambilan keputusan
+</p><p>Pernyataan = suatu pernyataan yang akan dijalankan jika kondisi bernilai benar
+</p><p>
+</p><p>7 cout&lt;&lt;“ani mendapat pujian”;
+</p><p>Kondisi
+</p><p>tidak
+</p><p>ya
+</p><p>Pernyataan
+</p><p>Contoh program :
+</p><p>if (nilai==10)
+</p><p>cout&lt;&lt;“ani mendapat pujian”;
+</p><p>
+</p><p>8 Jika terdapat lebih dari 1 statement Bentuk Umum : if (kondisi)
+</p><p>{
+</p><p>pernyataan 1;
+</p><p>pernyataan 2;
+</p><p>…..
+</p><p>}
+</p><p>Contoh program:
+</p><p>Untuk mencari nilai diantara 0 – 10, jika bilangan yang dimasukkan adalah bilangan 1 s/d 9 maka akan program akan menampilkan tulisan sbb
+</p><p>Bilangan yang dimasukkan = &lt;output dari bilangan yang dimasukkan&gt;
+</p><p>Lebih besar dari nol dan lebih kecil dari sepuluh
+</p><p>
+</p><p>9 Struktur dua Kondisi if then else
+</p><p>Struktur percabangan ini sedikit lebih kompleks bila dibandingkan dengan struktur yang hanya memiliki satu buah kondisi.
+</p><p>Bentuk umumnya :
+</p><p>If (kondisi) {
+</p><p>pernyataan_jika_kondisi_terpenuhi
+</p><p>} else {
+</p><p>pernyataan_jika_kondisi_tidak_terpenuhi;
+</p><p>}
+</p><p>10 Kondisi
+</p><p>Pernyataan_1
+</p><p>Pernyataan_2
+</p><p>
+</p><p>11 Struktur Tiga Kondisi
+</p><p>Struktur ini merupakan perluasan dari struktur dua kondisi, yaitu dengan menyisipkan / menambahkan satu atau lebih kondisi didalamnya.
+</p><p>Bermanfaat untuk menyelesaikan sejumlah kemungkinan tindakan yang mungkin terjadi.
+</p><p>
+</p><p>12 Bentuk umum If (kondisi1) { pernyataan_jika_kondisi1_terpenuhi
+</p><p>} else if (kondisi2) {
+</p><p>pernyataan_jika_kondisi2_terpenuhi
+</p><p>} else if (kondisi3) {
+</p><p>pernyataan_jika_kondisi3_terpenuhi
+</p><p>} ……
+</p><p>Else {
+</p><p>pernyataan_jika_semua_kondisi_tidak_terpenuhi
+</p><p>
+</p><p>13 tidak tidak tidak … ya ya ya Kondisi1 Kondisi2 Kondisi3 Pernyataan_1
+</p><p>Pernyataan_n
+</p><p>
+</p><p>14 Contoh
+</p><p>Algoritma umur
+</p><p>(mencetak pesan “ani boleh nonton” jika umur yang dimasukkan diatas 17)
+</p><p>Deklarasi
+</p><p>umur : integer
+</p><p>Deskripsi
+</p><p>read (umur)
+</p><p>if umur &gt; 17 then
+</p><p>write (‘Ani boleh nonton’)
+</p><p>end if
+</p><p>
+</p><p>15 Contoh flowchartnya start Input umur Umur = 17 ? tidak ya Cetak
+</p><p>Ani Boleh nonton
+</p><p>end
+</p><p>
+</p><p>16 Selamat Mencoba :
+</p><p>Buatlah flowchart dan programnya jika k lebih besar dari 4 maka hitung x = k + 1
+</p><p>Buatlah flowchart untuk kondisi sebagai berikut : jika a&gt; b maka cetak nilai a sebaliknya jika b&gt;a maka cetak nilai b.
+</p><p>Buatlah sebuah flowchart untuk mengetahui apakah nilai tersebut merupakan bilangan genap atau ganjil
+</p><p>
+</p><p>17 Tugas!!!!
+</p><p>Buatlah algoritma pseudocode dan flowchart untuk mencari bilangan terbesar dari tiga buah bilangan bulat
+</p><p>Yang semangat yah buatnya!!!!!!
+</p><p>
+</p><p>18 Senam pikiran.....
+</p><p>Buatlah programnya jika k lebih besar dari 4 maka hitung x = k + 1
+</p><p>Buatlah program untuk kondisi sebagai berikut : jika a&gt; b maka cetak nilai a sebaliknya jika b&gt;a maka cetak nilai b.
+</p><p>Buatlah program untuk mengetahui apakah nilai tersebut merupakan bilangan genap atau ganjil
+</p><p>
+</p><p>19 Switch
+</p><p>Switch merupakan sebuah pernyataan yang digunakan untuk menjalankan salah satu pernyataan dari beberapa kemungkinan pernyataan, berdasarkan nilai dari sebuah ungkapan dan nilai penyeleksian.
+</p><p>Tipe dari ekspresi ini haruslah bilangan bulat dan karakter.
+</p><p>
+</p><p>20 Bentuk umum
+</p><p>Ungkapan = ungkapan1
+</p><p>Switch (ekspresi) { case konstanta1; pernyataan1; break; case konstanta2; pernyataan2; case konstantaN; pernyataanN; default; pernyataan default;
+</p><p>Pernyataan_1;
+</p><p>Break;
+</p><p>Ungkapan = ungkapan1
+</p><p>Pernyataan_2;
+</p><p>Break;
+</p><p>…
+</p><p>Pernyataan_1;
+</p><p>Break;
+</p><p>
+</p><p>21 Keterangan Ekspresi dapat berupa ungkapan, konstanta atapun variabel
+</p><p>Setiap pernyataan1 dapat terdiri dari sebuah atau beberapa pernyataan.
+</p><p>Pengujian pada switch dimulai dari konstanta1.Apabila nilainya cocok dengan ekspresi maka pernyataan1 akan dijalankan.Kalau tidak cocok akan beralih ke pernyataan2 begitu seterusnya sampai hasil yang diinginkan.
+</p><p>
+</p><p>22 Jika sampai pada pengujian akhir tidak ada yang cocok maka default akan dijalankan.
+</p><p>Perintah break berfungsi sebagai statement peloncatan. Artinya perintah ini akan menghentikan proses pengulangan dan program ini akan langsung meloncat ke statement yang berada dibawahnya.</p><p><strong></strong></p><br />
+                                            <h2 class="ez-toc-section" id="buat-flowchart-menentukan-bilangan-terkecil-dari-2-bilangan%e2%80%8b">
+                            21. buat flowchart menentukan bilangan terkecil dari 2 bilangan​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>Algoritma Menentukan Nilai Terkecil dari 3 Bilangan
+</p>Mulai
+Deklarasi variabel terkecil, bil1, bil2, bil3
+Masukan Bilangan bil1, bil2, bil3
+Set nilai bil1 sebagai bilangan terkecil
+Jika bil2 kurang dari bilangan terkecil, maka bil2 menjadi bilangan terkecil
+Jika bil3 kurang dari bilangan terkecil, maka bil3 yang menjadi bilangan terkecil
+Tampilkan bilangan terkecil
+Selesai<br />
+                                            <h2 class="ez-toc-section" id="gambar-flowchart-untuk-memilih-satu-bilangan-terkecil-dari-empat-bilangan">
+                            22. Gambar flowchart untuk memilih satu bilangan terkecil dari empat bilangan??</h2><br />
+                        <p>angka dua kalau nggak salah</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-flowchart-menentukan-bilangan-bulat%e2%80%8b">
+                            23. Buatlah flowchart menentukan bilangan bulat?​</h2><br />
+                        <p></p><p>flowchart untuk menentukan bilangan genap atau ganjil</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-pseudocodeflowchart-dan-program-untuk-1-menentukan-apakah-suatu-bilangan-merupakan-bilangan-prima-atau-bukan2-program-untuk-menentukan-apakah-tahun-yang-diinputkan-termasuk-tahun-kabisa">
+                            24. Buatlah pseudocode,flowchart dan program untuk : 1. menentukan apakah suatu bilangan merupakan bilangan prima atau bukan?
+2. program untuk menentukan apakah tahun yang diinputkan termasuk tahun kabisat/bukan</h2><br />
+                        semoga bisa membantu,, maaf klo tulisannya kurang jelas :)<br />
+                                            <h2 class="ez-toc-section" id="flowchart-bilangan-a-positif-atau-negatif%e2%80%8b">
+                            25. Flowchart bilangan A positif atau negatif??​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Positif</p><p><strong>Penjelasan:</strong></p><p>Maaf, Klw Slh;_;</p><br />
+                                            <h2 class="ez-toc-section" id="buat-flowchart-menentukan-bilangan-terkecil-dari-4-bilangan%e2%80%8b">
+                            26. buat flowchart menentukan bilangan terkecil dari 4 bilangan​</h2><br />
+                        Maaf kalau salah besties<br />
+                                            <h2 class="ez-toc-section" id="gambar-flowchart-untuk-memilih-satu-bilangan-terbesar-dari-empat-bilangan">
+                            27. Gambar flowchart untuk memilih satu bilangan terbesar dari empat bilangan</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Untuk <strong>melakukan pencarian nilai terbesar dari empat bilangan dapat digunakan berbagai cara. </strong>Di sini kita akan menggunakan “Linear Search” </p><p><strong>Penjelasan:</strong></p><p>sc:google&gt;Brainly.com</p><br />
+                                            <h2 class="ez-toc-section" id="1-flowchart-untuk-menampilkan-hasil-perkalian-10-bilangan-genap-pertama2-flowchart-untuk-menampilkan-bilangan-terbesar-dari-10-bilangan-yang-diinputkanyang-bisa-bantu-ya-thx">
+                            28. 1. flowchart untuk menampilkan hasil perkalian 10 bilangan genap pertama
+2. flowchart untuk menampilkan bilangan terbesar dari 10 bilangan yang diinputkan
+yang bisa bantu ya.thx :)</h2><br />
+                        Docker adalah seperti layaknya sebuah dialog box. Namun memiliki perbedaan yaitu pada dialog box hanya dapat diakses pada saat sebuah tool tertentu aktif dan akan menghilang ketika perintah editing dijalankan. Docker akan terus terlihat pada tampilan layar kerja dan memiliki lengkap akses perintahnya. <br /><br />
+                                            <h2 class="ez-toc-section" id="jika-saya-memiliki-variable-x-dengan-isi-bilangan-real-seperti-9-8-6-7-7-8-dan-saya-ingin-membuat-flowchart-untuk-membedakan-antara-bilangan-real-genap-dan-ganjil-seperti-apa-flowchart-yang-harus">
+                            29. jika saya memiliki variable x dengan isi bilangan real seperti 9.8 , 6.7 , 7.8 dan saya ingin membuat flowchart untuk membedakan antara bilangan real genap dan ganjil. seperti apa flowchart yang harus saya buat ?</h2><br />
+                        jika saya memiliki variable x dengan isi bilangan real seperti 9.8 , 6.7 , 7.8 dan saya ingin membuat flowchart untuk membedakan antara bilangan real genap dan ganjil. seperti apa flowchart yang harus saya buat ?JawabanPendahuluan<p>Sebelumnya, mari kita baca pengertian dan jenis-jenis flowchart.
+</p><p>Flowchart adalah adalah suatu gambaran alur sebuah proses yang berurutan yang digambarkan dengan simbol-simbol tertentu.</p><p>Ada lima jenis Flowchart berfasarkan fungsinya:  </p><p>1. Flowchart Sistem (System Flowchart)  </p><p>2. Flowchart Dokumen (Document Flowchart)  </p><p>3. Flowchart Skematik (Schematic Flowchart)  </p><p>4. Flowchart Program (Program Flowchart)  </p><p>5. Flowchart Proses (Process Flowchart)
+</p><p>Simbol-simbol dalam flowchart
+</p><p>-Terminator/Simbol Titik Terminal menunjukkan permulaan (start) atau akhir (stop) dari suatu proses.
+</p><p>-Flow Line / garis alir adalah simbol yang digunakan untuk menghubungkan antara simbol yang satu dengan simbol yang lain (connecting line). Simbol ini juga berfungsi untuk menunjukkan arah aliran program.
+</p><p>-Processing Symbol / Simbol Proses digunakan untuk menunjukkan kegiatan yang dilakukan oleh komputer. Pada bidang industri (proses produksi barang), simbol ini menggambarkan kegiatan inspeksi atau yang biasa dikenal dengan simbol inspeksi
+</p><p>-Decision Symbol / Simbol Keputusan merupakan simbol yang digunakan untuk memilih proses atau keputusan berdasarkan kondisi yang ada. Simbol ini biasanya ditemui pada flowchart program.
+</p><p>-Input-Output / Simbol Keluar-Masuk menunjukkan proses input-output yang terjadi tanpa bergantung dari jenis peralatannya.
+</p><p>-Connector (On-page)  </p><p>Simbol ini fungsinya adalah untuk menyederhanakan hubungan antar simbol yang letaknya berjauhan atau rumit bila dihubungkan dengan garis dalam satu halaman
+</p><p>-Connector (Off-page)  </p><p>Sama seperti on-page connector, hanya saya simbol ini digunakan untuk menghubungkan simbol dalam halaman berbeda. label dari simbol ini dapat menggunakan huruf atau angka
+</p><p>-Preparation Symbol / Simbol Persiapan merupakan simbol yang digunakan untuk mempersiapkan penyimpanan di dalam storage.
+</p>Pembahasan<p>variable x dengan isi bilangan real seperti 9.8 , 6.7 , 7.8. Kita ingin membuat flowchart untuk membedakan antara bilangan real genap dan ganjil.</p><p>Untuk itu perlu kita ketahui jenis tipe data dan operasi modulus atau modulo.</p><p>Bilangan real adalah bilangan yang mungkin memiliki angka pecahan. Bilangan ini biasanya bertipe data float jika konteksnya adalah program komputer.</p><p>Kemudian operator modulo adalah sebuah operator aritmatika yang hanya bisa digunakan pada bilangan bulat atau Integer bila konteksnya adalah program komputer.</p><p>Modulo ini adalah sebuah operator aritmatika yang berfungsi untuk mengetahui sisa hasil bagi dua buah bilangan bulat integer. Misalnya 5 / 2 pada bilangan real akan menghasilkan 2,5. Namun pada bilangan integer atau bilangan bulat, 5 / 2 adalah 2 dengan sisa 1.</p><p>Ketika kita bisa mendapatkan sisa hasil bagi, kita bisa manfaatkan ini untuk mengetahui apakah suatu bilangan adalah ganjil atau genap. Bilangan ganjil adalah bilangan yang tidak habis dibagi 2, atau bilangan yang ketika dibagi 2, maka sisanya adalah 1. Sedangkan bilangna genap adalah bilangan yang habis ketika dibagi 2,  atau dengan kata lain bilangan genap adalah bilangan yang sisanya 0 ketika dibagi 2.</p><p>Namun untuk menggunakan operator modulo, kita perlu menggunakan bilangan integer, bukan bilangan real. Jika kita konversikan bilangan real dengan pecahan ke integer secara langsung, kita akan kehilangan informasi pecahan desimal di belakang koma, karena secara otomatis akan dibulatkan ke bawah. Misal 9,8 menjadi 9 pada bilangan integer. maka dari itu, untuk mengkonversikan bilangan real dengan 1 angka dibelakang koma, kita kalikan dengan 10 dahulu kemudian baru dikonversikan ke integer. Sehingga kita dapatkan bilangan tersebut secara utuh.</p><p>Kemudian kita tinggal gunakan operator modulo, jika di modulo 2 hasilnya 0 maka bilangan tersebut genap, dan sebaliknya jika hasilnya tidak 0, maka bilangan itu ganjil.</p><p>Oleh karena itu, kita bisa buat algoritmanya sebagai berikut:</p>StartMasukan bilangan real ke variabel xKalikan x dengan 10Simpan x ke bilangan integer, misal variabel iJika i % 2 = 0, maka bilangan genapSelain itu, bilangan ganjilEndKesimpulan<p>flowchart untuk membedakan antara bilangan real genap dan ganjil ada di lampiran.</p>Pelajari lebih lanjut<p>flowchart mencari bilangan terbesar dari 4 bilangan https://brainly.co.id/tugas/18317821</p>Detil Jawaban
+Kelas : 10
+Mapel : TIK
+Bab : Mengenal Pemrograman Komputer
+Kode : 10.11.6
+Kata Kunci : flowchart untuk membedakan antara bilangan real genap dan ganjil<br />
+                                            <h2 class="ez-toc-section" id="buatlah-algoritma-dan-flowchart-untuk-program-penentuan-bilangan-prima">
+                            30. buatlah algoritma dan flowchart untuk program penentuan bilangan prima?</h2><br />
+                        Algoritma dalam pseudocode:<br /><br />Integer angka<br />Integer i<br />integer flag = 0<br />For i=2 to angka-1<br />    if angka mod i = 0 then<br />        flag =1<br />        print "Bukan Prima"<br />End For<br /><br />if (angka&gt;1 and flag=0)<br />    print "Prima"<br />else print "Bukan Prima.<br /><br />Flowchart dilampirkan.<br /><br />semoga membantu, jangan lupa tandai sebagai jawaban terbaiknya :)<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/Lc-CiYIAXMo?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>b_indonesia</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/panitia-9-siapa-saja.html">Panitia 9 Siapa Saja</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/bahasa-inggris-nya-selamat-siang.html">Bahasa Inggris Nya Selamat Siang</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/perbedaan-sifat-dan-watak.html">Perbedaan Sifat Dan Watak</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/contoh-penerapan-norma-kesusilaan.html">Contoh Penerapan Norma Kesusilaan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/contoh-prinsip-keruangan.html">Contoh Prinsip Keruangan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/sudut-refleks-adalah-sudut-yang-besarnya.html">Sudut Refleks Adalah Sudut Yang Besarnya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/berikut-ini-yang-bukan-merupakan-unsur-kebugaran-jasmani-yaitu.html">Berikut Ini Yang Bukan Merupakan Unsur Kebugaran Jasmani Yaitu</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/suku-kedelapan-dari-barisan-geometri-9-81-adalah.html">Suku Kedelapan Dari Barisan Geometri 9 81 Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/fpb-dari-15-45-dan-75-adalah.html">Fpb Dari 15 45 Dan 75 Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/mengapa-invasi-teluk-babi-yang-dilakukan-amerika-serikat-mengalami-kegagalan.html">Mengapa Invasi Teluk Babi Yang Dilakukan Amerika Serikat Mengalami Kegagalan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/gagasan-pokok-paragraf-pertama-adalah.html">Gagasan Pokok Paragraf Pertama Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/regular-verb-1-2-3-dan-artinya.html">Regular Verb 1 2 3 Dan Artinya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/tanda-jeda-puisi.html">Tanda Jeda Puisi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/bahasa-inggris-thunder.html">Bahasa Inggris Thunder</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/malaikat-pencatat-amal-baik-dan-buruk-adalah.html">Malaikat Pencatat Amal Baik Dan Buruk Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/jelaskan-tri-kerukunan-umat-beragama.html">Jelaskan Tri Kerukunan Umat Beragama</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/besar-resultan-ketiga-gaya-tersebut-adalah.html">Besar Resultan Ketiga Gaya Tersebut Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/ciri-ciri-tari-tradisional-klasik.html">Ciri Ciri Tari Tradisional Klasik</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/arti-legs.html">Arti Legs</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://inewsph.github.io/kata-yang-tepat-untuk-melengkapi-teks-tersebut-adalah.html">Kata Yang Tepat Untuk Melengkapi Teks Tersebut Adalah</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://inewsph.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://inewsph.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://inewsph.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://inewsph.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://inewsph.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
